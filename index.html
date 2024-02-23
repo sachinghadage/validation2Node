@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <h1>SignUp</h1>
+    <div class="container">
+        <div class="name-email">
+            <div class="name child">
+                <label>Name</label><br>
+                <input class="input" placeholder="Enter your name" type="" id="name" onkeyup="validateName(event)">
+                <span class="span" id="name-span"></span>
+            </div>
+            
+            <div class="email child">
+                <label>Email</label><br>
+                <div>
+                    <div class="sub-pass">
+                        <input class="input" style="width: 100%;" placeholder="Enter Email" type="email" id="email"
+                            onkeyup="validateEmail()"></input>
+                    </div>
+
+                </div>
+                <span class="span" id="email-span"></span>
+            </div>
+        </div>
+        <div class="pass-cpass">
+            <div class="pass child">
+                <label>Password</label><br>
+                <div>
+                    <div class="sub-pass">
+                        <input class="input" style="width: 100%;" placeholder="Enter password" type="password"
+                            id="password" onkeyup="validatePass()"></input>
+                        <i class="fas fa-eye eye" onclick="PasswordVisibility()"></i>
+                    </div>
+                </div>
+                <span class="span" id="pass-span"></span>
+            </div>
+        
+            <div class="pass child">
+                <label>Confirm Password</label><br>
+                <div>
+                    <div class="sub-pass">
+                        <input class="input" style="width: 100%;" placeholder="Enter password" type="password"
+                            id="password2" onkeyup="validatePasswordMatch()"></input>
+                        <i class="fas fa-eye eye" onclick="PasswordVisibility2()"></i>
+                    </div>
+        
+                </div>
+        
+                <span class="span" id="confirm-pass-span"></span>
+            </div>
+        </div>
+        
+
+        <div class="disc-phone">
+            <div class="alpha child">
+                <label>Description</label><br>
+                <textarea class="input disc" placeholder="Enter description" id="alpha" onkeyup=" validateDescription()"></textarea>
+                <span class="span" id="alpha-span"></span>
+            </div>
+            
+            <div class="phone child">
+                <label>Phone Field Validation</label><br>
+                <div class="phone-input ">
+                    <select class="input cc" id="country_code">
+                        <option value="+91">Ind (+91)</option>
+                        <option value="+1">USA (+1)</option>
+                        <option value="+44">UK (+44)</option>
+                        <option value="+61">Australia (+61)</option>
+                        <option value="+49">Germany (+49)</option>
+                        <option value="+33">France (+33)</option>
+                        <option value="+86">China (+86)</option>
+                        <option value="+55">Brazil (+55)</option>
+                        <option value="+81">Japan (+81)</option>
+                        <option value="+1">Canada (+1)</option>
+                        <!-- Add more options as needed -->
+                    </select><br><br>
+                    <input class="input" placeholder="Enter Phone Number" type="number" id="phone" onkeyup="validatePhone()" maxlength="11">
+                </div>
+                <span class="span" id="phone-span"></span>
+            </div>
+            
+        </div>
+
+        <div class="address-agreement">
+            <div class="address child">
+                <label>Address</label><br>
+                <textarea class="input address" placeholder="Enter address" id="address" onkeyup="validateAddress()"></textarea>
+                <span class="span" id="address-span"></span>
+
+            </div>
+            <div class="agreement child">
+                <label>Agreement</label><br><br>
+                <input type="checkbox" id="agreement" onchange="validateAgreement()"> I agree to the terms and conditions <br>
+                <span class="span" id="agreement-span"></span>
+            </div>
+            
+            
+        </div>
+        
+
+
+
+
+
+        <button class="submit-btn" type="submit" onclick="submit()" >SignUp</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

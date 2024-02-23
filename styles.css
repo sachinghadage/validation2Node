@@ -1,0 +1,122 @@
+body {
+    background-image: url('https://img.freepik.com/premium-photo/red-abstract-background-texture_851755-810.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    /* Additional styles */
+    /* Add any additional styles you want here */
+}
+h1{
+    text-align: center;
+}
+.name-email{
+    display: flex;
+}
+.pass-cpass{
+    display: flex;
+}
+
+.hide-btn{
+    background: #2c31dd;
+    color: aliceblue;
+}
+
+.disc-phone{
+    display: flex;
+}
+.address-agreement{
+    display: flex;
+}
+
+
+.child{
+    width: 100%;
+    margin: 1%;
+}
+.input{
+    width: 96%;
+    /* border-radius: 5px solid white; */
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.disc{
+    width: 96%;
+    /* border-radius: 5px solid white; */
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.submit-btn{
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(255 76 217);
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    border-radius: 1px;
+    margin-top: 2%;
+
+}
+
+.span{
+    color: red;
+}
+
+.phone-input{
+    display: flex;
+}
+
+.cc{
+    width: 20%;
+}
+
+
+.sub-pass{
+    display: flex;
+    position: relative;
+}
+.eye{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .name-email{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pass-cpass{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .hide-btn{
+        background: #2c31dd;
+        color: aliceblue;
+    }
+    
+    .disc-phone{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .cc {
+        width: 20%;
+    }
+
+
+
+  }
